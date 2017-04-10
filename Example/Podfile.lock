@@ -1,0 +1,16 @@
+PODS:
+  - GuildPageView (0.1.0)
+
+DEPENDENCIES:
+  - GuildPageView (from `../`)
+
+EXTERNAL SOURCES:
+  GuildPageView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GuildPageView: 647cf6a48fbb120c079074f427bf75dc2bd1344e
+
+PODFILE CHECKSUM: 7ee3549f48d33b5786b63429c42e90fe81890642
+
+COCOAPODS: 1.2.0

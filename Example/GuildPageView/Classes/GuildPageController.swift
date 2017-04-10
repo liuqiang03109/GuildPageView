@@ -8,19 +8,35 @@
 
 import UIKit
 
-class GuildPageController: UIViewController {
+private let lunchKey = "firstLunch"
 
+
+final class GuildPageController: UIViewController {
+
+    fileprivate lazy var scrollView: UIScrollView = {
+        let scrollView = UIScrollView(frame: UIScreen.main.bounds)
+        scrollView.delegate = self
+        return scrollView
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        view.addSubview(scrollView)
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    public class func isFirstLunch() -> Bool {
+        let standard = UserDefaults.standard
+        if !standard.bool(forKey: lunchKey) {
+            standard.set(true, forKey: lunchKey)
+            return true
+        }
+        return false
+    }
 
     /*
     // MARK: - Navigation
@@ -33,3 +49,15 @@ class GuildPageController: UIViewController {
     */
 
 }
+
+// MARK - 对外暴露的方法
+
+
+
+
+extension GuildPageController: UIScrollViewDelegate {
+    
+    
+}
+
+

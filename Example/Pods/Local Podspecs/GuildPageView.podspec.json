@@ -1,0 +1,22 @@
+{
+  "name": "GuildPageView",
+  "version": "0.1.0",
+  "summary": "A short description of GuildPageView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/liuqiang03109/GuildPageView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liuqiang03109": "liu.wen.he@chrjdt.com"
+  },
+  "source": {
+    "git": "https://github.com/liuqiang03109/GuildPageView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GuildPageView/Classes/**/*"
+}

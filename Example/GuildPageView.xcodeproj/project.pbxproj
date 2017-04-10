@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		76CD39F51DD4F001D3A1AF1C /* Pods_GuildPageView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67286FDD2CCE764DACA2ED41 /* Pods_GuildPageView_Tests.framework */; };
+		80005E5D1E9B9352009C9A2B /* GuildPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80005E5C1E9B9352009C9A2B /* GuildPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,7 @@
 		0787D1EFE38845C1FD16282D /* Pods-GuildPageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuildPageView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuildPageView_Tests/Pods-GuildPageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		089A18CF90F9F3C87B17F8C8 /* Pods-GuildPageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuildPageView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuildPageView_Example/Pods-GuildPageView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		17332AF14875BD1BBC4E9373 /* Pods-GuildPageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuildPageView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuildPageView_Tests/Pods-GuildPageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		25EEC1441E219CFC4D2F9022 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		25EEC1441E219CFC4D2F9022 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* GuildPageView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuildPageView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,9 +45,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		67286FDD2CCE764DACA2ED41 /* Pods_GuildPageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuildPageView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7E692E65569E66CB1CA95E /* Pods_GuildPageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuildPageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		96E2A866A0FE13C845C04F59 /* GuildPageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GuildPageView.podspec; path = ../GuildPageView.podspec; sourceTree = "<group>"; };
+		80005E5C1E9B9352009C9A2B /* GuildPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuildPageController.swift; sourceTree = "<group>"; };
+		96E2A866A0FE13C845C04F59 /* GuildPageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GuildPageView.podspec; path = ../GuildPageView.podspec; sourceTree = "<group>"; };
 		AE1D376389CB8ED2B52A19C4 /* Pods-GuildPageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuildPageView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuildPageView_Example/Pods-GuildPageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B7900CD80015201E84B9CC48 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B7900CD80015201E84B9CC48 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		607FACD21AFB9204008FA782 /* Example for GuildPageView */ = {
 			isa = PBXGroup;
 			children = (
+				80005E5B1E9B91F3009C9A2B /* Classes */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -137,6 +140,14 @@
 				25EEC1441E219CFC4D2F9022 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		80005E5B1E9B91F3009C9A2B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				80005E5C1E9B9352009C9A2B /* GuildPageController.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		82C7368AFB4A478FEA3B20A0 /* Frameworks */ = {
@@ -363,6 +374,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				80005E5D1E9B9352009C9A2B /* GuildPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,6 @@
+framework module GuildPageView {
+  umbrella header "GuildPageView-umbrella.h"
+
+  export *
+  module * { export * }
+}
