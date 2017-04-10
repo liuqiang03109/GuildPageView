@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GuildPageView_Example' do
+  pod 'GuildPageView', :path => '../'
+
+  target 'GuildPageView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
